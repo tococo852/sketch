@@ -7,6 +7,10 @@ html,body{
 .box{
     border: 1px solid grey;
 }
+.boxShadow{
+    box-shadow: 0 0 0 0.1px grey;
+
+}
 
 .mainBox{
     display: flex;
@@ -20,16 +24,21 @@ html,body{
 
 .sketchBox{
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    flex-basis: 85%;
-    flex-wrap: wrap;
 }
 .sideBar{
     flex-basis: 10%;
 }
 
-.sketchFrame{
+.sketchRow{
+    display: flex;
     flex: grow 1;
-    flex-basis: 6%;
+    flex-basis: 100%;
+
+}
+.sketchColumn{
+    flex: grow 1;
+    flex-basis: 100%;
 
 }
